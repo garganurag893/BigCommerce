@@ -1,6 +1,6 @@
-import Header from "./components/atoms/Header";
-import ProductJourney from "./components/organisms/ProductJourney";
-import Steps from "./components/organisms/Steps";
+import Header from './components/atoms/Header';
+import ProductJourney from './components/organisms/ProductJourney';
+import Steps from './components/organisms/Steps';
 
 const App = () => (
   <div className="bg-background h-full min-h-screen overflow-hidden font-mono">

@@ -1,4 +1,4 @@
-import { SelectHTMLAttributes, FC } from "react";
+import { SelectHTMLAttributes, FC } from 'react';
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   options: string[];

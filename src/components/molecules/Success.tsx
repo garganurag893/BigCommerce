@@ -1,6 +1,6 @@
-import { useCheckoutStore } from "../../store/useCheckoutStore";
-import { useStepStore } from "../../store/useStepStore";
-import Button from "../atoms/Button";
+import { useCheckoutStore } from '../../store/useCheckoutStore';
+import { useStepStore } from '../../store/useStepStore';
+import Button from '../atoms/Button';
 
 const Success = () => {
   const restart = useStepStore((state) => state.restart);

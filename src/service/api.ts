@@ -21,9 +21,9 @@ class ApiInstance {
   ): Promise<ResponseType> => {
     try {
       const resp = await fetch(`${this.baseUrl}${path}`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
@@ -36,6 +36,6 @@ class ApiInstance {
   };
 }
 
-const api = new ApiInstance("https://fakestoreapi.com");
+const api = new ApiInstance('https://fakestoreapi.com');
 
 export default api;

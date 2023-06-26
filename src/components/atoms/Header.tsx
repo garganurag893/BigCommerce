@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 interface LinkProps {
   text: string;
@@ -16,7 +16,7 @@ const Link: FC<LinkProps> = ({ text, href }) => (
   </a>
 );
 
-const Header: FC<{}> = () => (
+const Header = () => (
   <header className="bg-white w-full shadow-md py-2 fixed top-0 z-20">
     <div className="flex flex-row items-center justify-between px-4 sm:px-16">
       <img

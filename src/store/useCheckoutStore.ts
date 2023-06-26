@@ -1,10 +1,10 @@
-import { create } from "zustand";
+import { create } from 'zustand';
 import {
   AddressDetails,
   ProductDetails,
   SubmitDetailsResponse,
-} from "../types";
-import api from "../service/api";
+} from '../types';
+import api from '../service/api';
 
 interface CheckoutState {
   selectedProducts: Map<number, ProductDetails>;
@@ -38,7 +38,7 @@ export const useCheckoutStore = create<CheckoutState>((set, get) => ({
         finalProducts.push({ productId: value.id, quantity: 1 });
       });
       const resp = await api.post<SubmitDetailsResponse, SubmitDetailsResponse>(
-        "/carts",
+        '/carts',
         {
           userId: 5,
           date: new Date(),
@@ -50,7 +50,7 @@ export const useCheckoutStore = create<CheckoutState>((set, get) => ({
       );
       return resp;
     } catch (error) {
-      console.log("Error in handleSubmitDetails");
+      console.log('Error in handleSubmitDetails');
       throw error;
     }
   },

@@ -1,7 +1,7 @@
-import { shallow } from "zustand/shallow";
-import { useCheckoutStore } from "../../store/useCheckoutStore";
-import ProductCard from "../atoms/ProductCard";
-import { ReactNode } from "react";
+import { shallow } from 'zustand/shallow';
+import { useCheckoutStore } from '../../store/useCheckoutStore';
+import ProductCard from '../atoms/ProductCard';
+import { ReactNode } from 'react';
 
 const Checkout = () => {
   const { selectedProducts, addressDetails } =
@@ -23,7 +23,7 @@ const Checkout = () => {
   };
   const totalCash = () => {
     let total = 0;
-    selectedProducts.forEach((value, key) => {
+    selectedProducts.forEach((value) => {
       total = total + (value?.price || 0);
     });
     return total;

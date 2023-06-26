@@ -1,10 +1,42 @@
-# Getting Started with Create React App
+# Big Commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Template for Step-Flow UX pattern product checkout experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🔥 [React.js](https://react.dev/) 
+- 🎨 Integrated with [Tailwind CSS](https://tailwindcss.com)
+- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
+- ✏️ Linter with [ESLint](https://eslint.org)
+- 🛠 Code Formatter with [Prettier](https://prettier.io)
+- 🦊 Husky for Git Hooks
+- 🚫 Lint-staged for running linters on Git staged files
+- 🗂 VSCode configuration: ESLint, Prettier, TypeScript
+
+## Steps
+- Display a list of selectable products rendered from an API [you may simulate the api loading however you want].
+  
+  a. Multi selection of products must be allowed
+
+  b. Continue button to confirm selection
+
+- On “Continue” from the previous page, render a page to fetch the address
+[billing/shipping address] of the customer.
+-  On “Continue” from the previous page, render a page to display the final price including
+discount.
+- On Submit,
+ 
+  a. If the API call is successful, display a confirmation of the success.
+
+  b. If the API call fails, then display an error message to illustrate.
+
+## Points to be taken care of
+
+- You must not use multiple URL routes for the page, the entire experience should be in one-page
+- It must be possible to go back and forth between any step and the previously saved data
+must be available pre-filled/selected.
+- You may use any version of react and any library of your choosing.
+- It will be a bonus if you provide aesthetic styling to the page.
 
 ### `npm start`
 
@@ -28,19 +60,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

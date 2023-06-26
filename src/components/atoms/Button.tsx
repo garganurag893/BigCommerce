@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, FC } from "react";
+import { ButtonHTMLAttributes, FC } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
@@ -15,8 +15,8 @@ const Button: FC<ButtonProps> = ({
   <button
     disabled={disabled || isLoading}
     className={`flex flex-row items-center px-4 py-2 bg-black text-white rounded-md hover:scale-105 duration-300 ${
-      className || ""
-    } ${disabled ? "bg-gray-400" : ""}`}
+      className || ''
+    } ${disabled ? 'bg-gray-400' : ''}`}
     {...props}
   >
     {isLoading && (

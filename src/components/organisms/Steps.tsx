@@ -1,12 +1,12 @@
-import { FC, useState } from "react";
-import { COMMON_ERROR_MESSAGE, STEPS_DATA } from "../../constant";
-import Button from "../atoms/Button";
-import { useStepStore } from "../../store/useStepStore";
-import useCheckStep from "../../hooks/useCheckStep";
-import { useCheckoutStore } from "../../store/useCheckoutStore";
-import { shallow } from "zustand/shallow";
+import { useState } from 'react';
+import { COMMON_ERROR_MESSAGE, STEPS_DATA } from '../../constant';
+import Button from '../atoms/Button';
+import { useStepStore } from '../../store/useStepStore';
+import useCheckStep from '../../hooks/useCheckStep';
+import { useCheckoutStore } from '../../store/useCheckoutStore';
+import { shallow } from 'zustand/shallow';
 
-const Steps: FC<{}> = () => {
+const Steps = () => {
   const handleSubmitDetails = useCheckoutStore(
     (state) => state.handleSubmitDetails
   );
@@ -45,7 +45,7 @@ const Steps: FC<{}> = () => {
             <div className="flex flex-row items-center">
               <div
                 className={`rounded-full h-6 w-6 flex justify-center items-center shrink-0 transition-colors duration-300 ${
-                  isCompleted ? "bg-green-500" : "bg-black"
+                  isCompleted ? 'bg-green-500' : 'bg-black'
                 }`}
               >
                 {isCompleted ? (
@@ -64,16 +64,16 @@ const Steps: FC<{}> = () => {
               <p className="ml-2 font-semibold text-base">{title}</p>
             </div>
             <div
-              className={`pl-3 ${isLastIdx ? "" : "border-l border-l-black"} ${
+              className={`pl-3 ${isLastIdx ? '' : 'border-l border-l-black'} ${
                 currentStep === index
-                  ? "max-h-96 duration-700"
-                  : "max-h-0 duration-200"
+                  ? 'max-h-96 duration-700'
+                  : 'max-h-0 duration-200'
               } ml-3 mt-1 overflow-hidden  transition-all`}
             >
               <p className="ml-2 font-light text-base">{description}</p>
               <div className="flex flex-row items-center">
                 <Button
-                  text={isLastIdx ? "Buy" : "Continue"}
+                  text={isLastIdx ? 'Buy' : 'Continue'}
                   disabled={isContinueDisabled}
                   isLoading={isLoadingSubmit}
                   className="m-2"

@@ -1,8 +1,8 @@
-import AddressSelection from "../molecules/AddressSelection";
-import ProductList from "../molecules/ProductList";
-import { useStepStore } from "../../store/useStepStore";
-import Checkout from "../molecules/Checkout";
-import Success from "../molecules/Success";
+import AddressSelection from '../molecules/AddressSelection';
+import ProductList from '../molecules/ProductList';
+import { useStepStore } from '../../store/useStepStore';
+import Checkout from '../molecules/Checkout';
+import Success from '../molecules/Success';
 
 const ProductJourney = () => {
   const currentStep = useStepStore((state) => state.currentStep);

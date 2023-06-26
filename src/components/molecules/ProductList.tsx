@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { shallow } from "zustand/shallow";
-import { useCheckoutStore } from "../../store/useCheckoutStore";
-import ProductCard from "../atoms/ProductCard";
-import api from "../../service/api";
-import { ProductDetails } from "../../types";
-import ProductLoadingCard from "../atoms/ProductLoadingCard";
+import { useEffect, useState } from 'react';
+import { shallow } from 'zustand/shallow';
+import { useCheckoutStore } from '../../store/useCheckoutStore';
+import ProductCard from '../atoms/ProductCard';
+import api from '../../service/api';
+import { ProductDetails } from '../../types';
+import ProductLoadingCard from '../atoms/ProductLoadingCard';
 
 const ProductList = () => {
   const { selectedProducts, handleSelectProduct } = useCheckoutStore(
@@ -19,7 +19,7 @@ const ProductList = () => {
   const getProducts = async () => {
     try {
       setIsLoading(true);
-      const products = await api.get<ProductDetails[]>("/products?limit=15");
+      const products = await api.get<ProductDetails[]>('/products?limit=15');
       setProducts(products);
       setIsLoading(false);
     } catch (err) {

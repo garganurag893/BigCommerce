@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { ProductDetails } from "../../types";
+import { FC } from 'react';
+import { ProductDetails } from '../../types';
 
 interface ProductCardProps {
   product: ProductDetails;
@@ -17,7 +17,7 @@ const ProductCard: FC<ProductCardProps> = ({
     <li
       onClick={onClick}
       className={`mx-3 my-6 flex flex-col justify-between max-w-xxs sm:w-72 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 duration-300 ${
-        isSelected ? "bg-black shadow-xl" : ""
+        isSelected ? 'bg-black shadow-xl' : ''
       }`}
     >
       <div>
@@ -28,9 +28,9 @@ const ProductCard: FC<ProductCardProps> = ({
             <p className="ml-2 font-semibold text-sm">{rating.rate}</p>
           </div>
         </div>
-        <p className={`font-bold text-base p-2 ${isSelected ? "text-white" : "text-black"}`}>{title}</p>
+        <p className={`font-bold text-base p-2 ${isSelected ? 'text-white' : 'text-black'}`}>{title}</p>
       </div>
-      <p className={`p-2 text-xs font-bold ${isSelected ? "text-white" : "text-black"}`}>$ {price}</p>
+      <p className={`p-2 text-xs font-bold ${isSelected ? 'text-white' : 'text-black'}`}>$ {price}</p>
     </li>
   );
 };

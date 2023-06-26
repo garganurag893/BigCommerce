@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, FC } from "react";
+import { InputHTMLAttributes, FC } from 'react';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -14,11 +14,11 @@ const Input: FC<InputProps> = ({
   error,
   ...props
 }) => {
-  let gridWidth = "";
+  let gridWidth = '';
   if (grid === 2) {
-    gridWidth = "md:w-1/2";
+    gridWidth = 'md:w-1/2';
   } else if (grid === 3) {
-    gridWidth = "md:w-1/3";
+    gridWidth = 'md:w-1/3';
   }
   return (
     <div className={`w-full px-3 mb-4 md:mb-0 ${gridWidth}`}>
@@ -29,7 +29,7 @@ const Input: FC<InputProps> = ({
       )}
       <input
         className={`appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${
-          !!error ? "border border-red-500" : ""
+          error ? 'border border-red-500' : ''
         }`}
         {...props}
       />
