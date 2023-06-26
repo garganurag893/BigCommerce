@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ProductLoadingCard Component ProductLoadingCard Snapshot Test 1`] = `
+<div>
+  <li
+    class="mx-3 my-6 max-w-xxs sm:w-72 rounded overflow-hidden hover:shadow-lg hover:scale-105 duration-300"
+  >
+    <div
+      class="animate-pulse"
+    >
+      <div
+        class="w-full bg-slate-400 h-64 rounded"
+      />
+      <div
+        class="py-2"
+      >
+        <div
+          class="w-full h-6 bg-slate-400 rounded mb-2"
+        />
+        <div
+          class="w-full h-4 bg-slate-400 rounded"
+        />
+      </div>
+    </div>
+  </li>
+</div>
+`;

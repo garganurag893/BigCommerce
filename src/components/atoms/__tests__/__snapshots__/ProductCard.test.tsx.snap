@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ProductCard Component ProductCard Selectec Snapshot Test 1`] = `
+<div>
+  <li
+    class="mx-3 my-6 flex flex-col justify-between max-w-xxs sm:w-72 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 duration-300 bg-black shadow-xl"
+    data-testid="product-card"
+  >
+    <div>
+      <div
+        class="relative h-64 w-full"
+      >
+        <img
+          alt="Mens Cotton Jacket"
+          class="object-contain h-full w-full bg-white"
+          src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        />
+        <div
+          class="absolute bottom-2 right-2 bg-gray-300/40 flex flex-row items-center px-1 rounded-sm"
+        >
+          <img
+            alt="Star"
+            height="16"
+            src="/assets/png/star.png"
+            width="16"
+          />
+          <p
+            class="ml-2 font-semibold text-sm"
+          >
+            4.7
+          </p>
+        </div>
+      </div>
+      <p
+        class="font-bold text-base p-2 text-white"
+      >
+        Mens Cotton Jacket
+      </p>
+    </div>
+    <p
+      class="p-2 text-xs font-bold text-white"
+    >
+      $ 
+      55.99
+    </p>
+  </li>
+</div>
+`;
+
+exports[`Test ProductCard Component ProductCard Snapshot Test 1`] = `
+<div>
+  <li
+    class="mx-3 my-6 flex flex-col justify-between max-w-xxs sm:w-72 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 duration-300 "
+    data-testid="product-card"
+  >
+    <div>
+      <div
+        class="relative h-64 w-full"
+      >
+        <img
+          alt="Mens Cotton Jacket"
+          class="object-contain h-full w-full bg-white"
+          src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        />
+        <div
+          class="absolute bottom-2 right-2 bg-gray-300/40 flex flex-row items-center px-1 rounded-sm"
+        >
+          <img
+            alt="Star"
+            height="16"
+            src="/assets/png/star.png"
+            width="16"
+          />
+          <p
+            class="ml-2 font-semibold text-sm"
+          >
+            4.7
+          </p>
+        </div>
+      </div>
+      <p
+        class="font-bold text-base p-2 text-black"
+      >
+        Mens Cotton Jacket
+      </p>
+    </div>
+    <p
+      class="p-2 text-xs font-bold text-black"
+    >
+      $ 
+      55.99
+    </p>
+  </li>
+</div>
+`;
