@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Input Component Input Grid 2 Snapshot Test 1`] = `
+<div>
+  <div
+    class="w-full px-3 mb-4 md:mb-0 md:w-1/2"
+  >
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+    >
+      First Name
+    </label>
+    <input
+      class="testClass"
+    />
+    <p
+      class="text-gray-600 text-xs italic"
+    >
+      Some random name
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test Input Component Input Grid 3 Snapshot Test 1`] = `
+<div>
+  <div
+    class="w-full px-3 mb-4 md:mb-0 md:w-1/3"
+  >
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+    >
+      First Name
+    </label>
+    <input
+      class="testClass"
+    />
+    <p
+      class="text-gray-600 text-xs italic"
+    >
+      Some random name
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test Input Component Input Snapshot Test 1`] = `
+<div>
+  <div
+    class="w-full px-3 mb-4 md:mb-0 "
+  >
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+    >
+      First Name
+    </label>
+    <input
+      class="testClass"
+    />
+    <p
+      class="text-gray-600 text-xs italic"
+    >
+      Some random name
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test Input Component Input With Error Snapshot Test 1`] = `
+<div>
+  <div
+    class="w-full px-3 mb-4 md:mb-0 md:w-1/3"
+  >
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+    >
+      First Name
+    </label>
+    <input
+      class="testClass"
+    />
+    <p
+      class="text-red-500 text-xs italic"
+    >
+      Some random name
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header Component Header Snapshot Test 1`] = `
+<div>
+  <header
+    class="bg-white w-full shadow-md py-2 fixed top-0 z-20"
+  >
+    <div
+      class="flex flex-row items-center justify-between px-4 sm:px-16"
+    >
+      <img
+        alt="User"
+        class="object-contain"
+        height="122"
+        src="/assets/png/logo.png"
+        width="167"
+      />
+      <nav>
+        <a
+          class="font-medium text-md mx-3"
+          href="https://anuraggarg.vercel.app/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          About
+        </a>
+        <a
+          class="font-medium text-md mx-3"
+          href="https://medium.com/@garganurag893/how-to-build-game-using-react-native-853455e5b1f5"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Blogs
+        </a>
+        <a
+          class="font-medium text-md mx-3"
+          href="https://www.npmjs.com/package/react-native-phone-number-input"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Special
+        </a>
+      </nav>
+    </div>
+  </header>
+</div>
+`;
