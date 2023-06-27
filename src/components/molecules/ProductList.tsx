@@ -63,7 +63,7 @@ const ProductList = () => {
     try {
       setIsLoading(true)
       setError(null)
-      const products = await api.get<ProductDetails[]>('/products?limit=15')
+      const products = await api.get<ProductDetails[]>('/products?limit=20')
       setProducts(products)
     } catch (err) {
       setError('Something went wrong, Please try after some time')
